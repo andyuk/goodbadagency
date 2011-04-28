@@ -1,10 +1,10 @@
-#goodbadagnency.[not decided yet]
+#goodbadagenncy.[not decided yet]
 
 ## User stories
 ###as a user of the site, I want to 
-+ login
-+ logout
-+ add a positive remark about an agency
-+ add a negative remark about an agency
-+ vote UP on a remark
-+ votedown on a remark
+1 login
+2 logout
+3 add a positive remark about an agency
+4 add a negative remark about an agency
+5 vote UP on a remark
+6 votedown on a remark
