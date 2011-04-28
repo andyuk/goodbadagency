@@ -1,4 +1,4 @@
-#goodbadagenncy.org / goodbadagency.com
+#goodbadagency.org / goodbadagency.com
 
 ## User stories
 
