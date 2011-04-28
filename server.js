@@ -17,7 +17,7 @@ var restServer = connect.createServer(
 // - LOGIN
 // - LOGOUT
 
-//--VOTES
+//REMARKS
 //READ          
           restApp.get('/remark/:id?', function(req, res) {
             var query = {};
