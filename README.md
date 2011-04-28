@@ -7,8 +7,8 @@ throughtout the world.
 
 ##Rules:
 1 remark per agency per user    
-1 up voter per agency per user == positive vote FOR agency    
-1 down voter pwer agency per user == negative vote AGAINST agency    
+1 up vote per agency per user == positive vote FOR agency    
+1 down vote per agency per user == negative vote AGAINST agency    
 
 votes are cast, named as the user and can only be deleted by a moderator.    
 
