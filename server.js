@@ -1,6 +1,7 @@
 var connect = require('connect');
 var appSchema = require('./node_modules/app.schema.js');
 var port = 8665;
+
 var restServer = connect.createServer(
         connect.bodyParser(),
         connect.router(function(restApp) {
@@ -12,12 +13,13 @@ var restServer = connect.createServer(
                          'Content-Length':jsonData.length ? jsonData.length : 0 });
             res.end(jsonData);
           }
-          
+//READ          
           restApp.get('/record/:id?', function(req, res) {
             var query = {};
             if(req.params.id){
               query._id = req.params.id;
             }
+            
             models.Record.find(query, function(error, records) {
               var output;
               if(error){
@@ -29,6 +31,7 @@ var restServer = connect.createServer(
               responseHandler(res, output);
             });
           });
+//CREATE          
           restApp.post('/record', function(req, res) {
             var record = new models.Record(req.body);
             record.save(function(error) {
@@ -39,6 +42,7 @@ var restServer = connect.createServer(
               responseHandler(res, record);
             });
           });
+//UPDATE          
           restApp.put('/record/:id', function(req, res) {
             var id = req.params.id;
             var recordUpdates = req.body;
@@ -66,7 +70,8 @@ var restServer = connect.createServer(
               }
             });
           });
-
+          
+//DELETE
           restApp['delete']('/record/:id', function(req, res) {
 
             var id = req.params.id;
@@ -91,6 +96,7 @@ var restServer = connect.createServer(
               }
             });
           });
+          
         })).listen(port);
 
 console.log('server started and listening on port :' + port);
