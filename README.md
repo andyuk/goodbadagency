@@ -7,4 +7,4 @@
 3. add a positive remark about an agency
 4. add a negative remark about an agency
 5. vote UP on a remark
-6. votedown on a remark
+6. vote DOWN on a remark
