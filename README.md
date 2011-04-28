@@ -1,10 +1,19 @@
-#goodbadagenncy.[not decided yet]
+#goodbadagenncy.org / goodbadagency.com
 
 ## User stories
+
 ###as a user of the site, I want to 
-1. login
-2. logout
-3. add a positive remark about an agency
-4. add a negative remark about an agency
-5. vote UP on a remark
-6. vote DOWN on a remark
+1. search remarks made based on the name of an ageny 
+4. login through openid
+8. logout
+16. add a positive remark about an agency
+32. add a negative remark about an agency
+64. vote UP on a remark
+128. vote DOWN on a remark
+256. share my remark through Twitter, Facebook etc
+
+
+###as a moderator of the site I want to be able to 
+1. remove a remark
+2. edit a remark
+
