@@ -15,7 +15,8 @@ votes are cast, named as the user and can only be deleted by a moderator.
 ## User stories
 
 ###as a user of the site, I want to 
-1. search remarks made based on the name of an agency 
+1. View charts of agencies based on positive / negative votes
+3. search remarks made based on the name of an agency 
 4. login through openid
 8. logout
 16. add a positive remark about an agency
