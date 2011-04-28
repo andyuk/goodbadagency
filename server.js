@@ -13,8 +13,13 @@ var restServer = connect.createServer(
                          'Content-Length':jsonData.length ? jsonData.length : 0 });
             res.end(jsonData);
           }
+// AUTHENTICATION
+// - LOGIN
+// - LOGOUT
+
+//--VOTES
 //READ          
-          restApp.get('/record/:id?', function(req, res) {
+          restApp.get('/remark/:id?', function(req, res) {
             var query = {};
             if(req.params.id){
               query._id = req.params.id;
@@ -32,7 +37,7 @@ var restServer = connect.createServer(
             });
           });
 //CREATE          
-          restApp.post('/record', function(req, res) {
+          restApp.post('/remark', function(req, res) {
             var record = new models.Record(req.body);
             record.save(function(error) {
               if(error){
@@ -43,7 +48,7 @@ var restServer = connect.createServer(
             });
           });
 //UPDATE          
-          restApp.put('/record/:id', function(req, res) {
+          restApp.put('/remark/:id', function(req, res) {
             var id = req.params.id;
             var recordUpdates = req.body;
             models.Record.findOne({_id : id}, function(err, record){
@@ -72,7 +77,7 @@ var restServer = connect.createServer(
           });
           
 //DELETE
-          restApp['delete']('/record/:id', function(req, res) {
+          restApp['delete']('/remark/:id', function(req, res) {
 
             var id = req.params.id;
 
@@ -96,7 +101,15 @@ var restServer = connect.createServer(
               }
             });
           });
-          
+//VOTES
+// - UP
+//          restApp.post('/vote/up/id', function(req, res) {
+// - DOWN
+//          restApp.post('/vote/down/id', function(req, res) {
+
+
+
         })).listen(port);
+
 
 console.log('server started and listening on port :' + port);
