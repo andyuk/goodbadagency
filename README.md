@@ -1,5 +1,17 @@
 #goodbadagency.org / goodbadagency.com
 
+# Recruitment agencies are always fuc*ing up!
+Here is how we start making them toe the line!
+A simple service that broadcasts an unbiased opinion on the recruitment agencies 
+throughtout the world.
+
+##Rules:
+1 remark per agency per user
+1 up voter per agency per user == positive vote FOR agency
+1 down voter pwer agency per user == negative vote AGAINST agency
+
+votes are cast, named as the user and can only be deleted by a moderator.
+
 ## User stories
 
 ###as a user of the site, I want to 
