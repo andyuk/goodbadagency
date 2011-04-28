@@ -4,11 +4,15 @@ var port = 8665;
 var restServer = connect.createServer(
         connect.bodyParser(),
         connect.router(function(restApp) {
-        var models = appSchema.getModels();          function responseHandler(res, data) {            var jsonData = JSON.stringify(data);
+        var models = appSchema.getModels();          
+        
+        function responseHandler(res, data) {            
+            var jsonData = JSON.stringify(data);
             res.writeHead(400, { 'Content-Type': 'application/json',
                          'Content-Length':jsonData.length ? jsonData.length : 0 });
             res.end(jsonData);
           }
+          
           restApp.get('/record/:id?', function(req, res) {
             var query = {};
             if(req.params.id){
