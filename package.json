@@ -1,0 +1,36 @@
+{
+  "name" : "goodbadagency",
+  "version" : "0.0.1",
+  "description" : "An online register of good and bad recruitment agencies!",
+  "keywords" : [ "recruitment", "agencies" ],
+  "maintainers" : [
+    {
+      "name" : "",
+      "email" : "",
+      "web" : ""
+    }
+  ],
+  "contributors" : [
+    {
+      "name" : "",
+      "email" : "",
+      "web" : ""
+    }
+  ],
+  "bugs" : "https://github.com/errumm/goodbadagency/issues",
+  "licenses" : [
+    {
+      "type" : "MIT",
+      "url" : "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "main" : "./server.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/errumm/goodbadagency.git"
+  },
+  "dependencies": 
+		{
+			"connect": ">=1.4.0"
+    }
+}
